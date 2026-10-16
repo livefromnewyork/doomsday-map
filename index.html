@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_00abe978fdc9559bebb80aa7d68e00d1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_00abe978fdc9559bebb80aa7d68e00d1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_00abe978fdc9559bebb80aa7d68e00d1 = L.map(
+                "map_00abe978fdc9559bebb80aa7d68e00d1",
+                {
+                    center: [40.7767, -73.9713],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+40.5,
+-74.35,
+],
+[
+40.9,
+-73.5,
+],
+],
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c3558bbc19029e345cf650988d999eab = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c3558bbc19029e345cf650988d999eab.addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_df6062bbc229a05cae2f9aca53adac38 = L.circleMarker(
+                [40.689247, -74.044502],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_2b64f3bbb1b15acb0433a76e1ef7f295 = L.circleMarker(
+                [40.752655, -73.977295],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_1894a059248cefa9d3ec333fcf9521f7 = L.circleMarker(
+                [40.751365, -73.978227],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_1894a059248cefa9d3ec333fcf9521f7.bindTooltip(
+                `<div>
+                     The Avengers vs. the Chitauri army<br>(The Avengers, 2012)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_046fd0f5dc6ca851af6b4cf4e868be3a = L.circleMarker(
+                [40.729169578227015, -74.00065892629384],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_a946964d8201c81b821028e797cc8497 = L.circleMarker(
+                [40.689247, -74.044502],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_067c0521c2f1c3592d888f25e4a0deb3 = L.circleMarker(
+                [40.729169578227015, -74.00065892629384],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_3edb7453b8a8166580c819914b5d1cb6 = L.circleMarker(
+                [40.84575946434035, -73.92824213438615],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_3edb7453b8a8166580c819914b5d1cb6.bindTooltip(
+                `<div>
+                     Doc Ock attacks Spider-Man<br>(Spider-Man: No Way Home, 2021)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b16b44d37a89343529d038cce4cb75be = L.circleMarker(
+                [40.74462300491642, -73.95761205582131],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_b16b44d37a89343529d038cce4cb75be.bindTooltip(
+                `<div>
+                     The Green Goblin attacks Happy Hogan's apartment<br>(Spider-Man: No Way Home, 2021)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8de9f1edd0873c636e34a39ee98d1fdd = L.circleMarker(
+                [40.72097536719649, -73.99737112883574],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_8de9f1edd0873c636e34a39ee98d1fdd.bindTooltip(
+                `<div>
+                     Doctor Strange fights Gargantos<br>(Doctor Strange in the Multiverse of Madness, 2022)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d36eb838d1a41b7704c5162f519a341c = L.circleMarker(
+                [40.752655, -73.977295],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_dadf095d027d7a117c541b4d3335503b = L.circleMarker(
+                [40.754082781301705, -73.97603415713355],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_dadf095d027d7a117c541b4d3335503b.bindTooltip(
+                `<div>
+                     The Void attacks New York<br>(Thunderbolts*, 2025)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5160a1b82def10a519df4711c9678fdc = L.circleMarker(
+                [40.758896, -73.98513],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_5160a1b82def10a519df4711c9678fdc.bindTooltip(
+                `<div>
+                     The Fantastic Four fight Galactus<br>(Fantastic Four: First Steps, 2025)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_117edeb5a46e96d0207901aea6aea7a6 = L.circleMarker(
+                [40.8096765, -73.9500295],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_117edeb5a46e96d0207901aea6aea7a6.bindTooltip(
+                `<div>
+                     The Hulk fights Abomination<br>(The Incredible Hulk, 2008)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0d0f9b3240426b40a90fdd67a7cf0b6 = L.circleMarker(
+                [40.73994078901997, -73.94868015601033],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_a0d0f9b3240426b40a90fdd67a7cf0b6.bindTooltip(
+                `<div>
+                     Black Widow infiltrates Hammer Industries<br>(Iron Man 2, 2010)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51ab5992c37eeae22010fb87855b3c24 = L.circleMarker(
+                [40.743647977025255, -73.84419559290764],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_51ab5992c37eeae22010fb87855b3c24.bindTooltip(
+                `<div>
+                     Iron Man fights Justin Hammer<br>(Iron Man 2, 2010)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_388f2464388ae7ebb7b9a2df07e5f643 = L.circleMarker(
+                [40.689247, -74.044502],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_ba5e51c70695c41f8e45c87dea01173e = L.circleMarker(
+                [40.755507760932566, -73.99481877572386],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_ba5e51c70695c41f8e45c87dea01173e.bindTooltip(
+                `<div>
+                     Spider-Man stops a runaway tank<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37424f9c7e054a77b10084782e843cc9 = L.circleMarker(
+                [40.689247, -74.044502],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var circle_marker_7f0c5a7e8c35a0c307e8b661c704e000 = L.circleMarker(
+                [40.684346, -74.036308],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_7f0c5a7e8c35a0c307e8b661c704e000.bindTooltip(
+                `<div>
+                     Spider-Man intercepts an illegal weapons deal<br>(Spider-Man: Homecoming, 2017)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34434bde87fb5078353f5be08ff0ed06 = L.circleMarker(
+                [40.765287, -73.931722],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_34434bde87fb5078353f5be08ff0ed06.bindTooltip(
+                `<div>
+                     Spider-Man stops a bank robbery<br>(Spider-Man: Homecoming, 2017)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_672059b29b29b33218cdffe06bf3d7de = L.circleMarker(
+                [40.572406, -73.979957],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_672059b29b29b33218cdffe06bf3d7de.bindTooltip(
+                `<div>
+                     Spider-Man fights the Vulture<br>(Spider-Man: Homecoming, 2017)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a389cf7b9219b57b39cbf208da69f05e = L.circleMarker(
+                [40.735454, -74.009015],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_a389cf7b9219b57b39cbf208da69f05e.bindTooltip(
+                `<div>
+                     Spider-Man stops a runaway tank<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_424bf445132a71d3d2c8fa947a804dd3 = L.circleMarker(
+                [40.724047, -74.003359],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_424bf445132a71d3d2c8fa947a804dd3.bindTooltip(
+                `<div>
+                     Spider-Man fights The Hand<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ee29b324c0497b03be03bcce0d77df4 = L.circleMarker(
+                [40.691468, -74.012104],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_3ee29b324c0497b03be03bcce0d77df4.bindTooltip(
+                `<div>
+                     Spider-Man fights Tarantula<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94de09999eef3968ea7f503cfab41fe1 = L.circleMarker(
+                [40.688609, -73.992991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_94de09999eef3968ea7f503cfab41fe1.bindTooltip(
+                `<div>
+                     Spider-Man fights the Scorpion<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6663712dc2cc80a46b06a4eb5b3afbd2 = L.circleMarker(
+                [40.765125, -73.975274],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_6663712dc2cc80a46b06a4eb5b3afbd2.bindTooltip(
+                `<div>
+                     Spider-Man fights the Hulk<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6dec82273eaaca172f6d29b9fd946b75 = L.circleMarker(
+                [40.755625, -73.985078],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_6dec82273eaaca172f6d29b9fd946b75.bindTooltip(
+                `<div>
+                     Spider-Man fights Boomerang<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a74c49e82d9381913d21814679238599 = L.circleMarker(
+                [40.716282, -74.004566],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_a74c49e82d9381913d21814679238599.bindTooltip(
+                `<div>
+                     The Punisher runs Spider-Man over<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9d37203d619097b216f8f633d5fb082 = L.circleMarker(
+                [40.7702, -73.942276],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            circle_marker_b9d37203d619097b216f8f633d5fb082.bindTooltip(
+                `<div>
+                     Jean Grey attacks the Department of Damage Control<br>(Spider-Man: Brand New Day, 2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d35651953ab436211588988a9581c70f = L.circleMarker(
+                [40.689247, -74.044502],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": false, "weight": 3}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            var marker_7e30ff8e6030fdea4c9f160b96d74cb0 = L.marker(
+                [40.752655, -73.977295],
+                {
+}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            marker_7e30ff8e6030fdea4c9f160b96d74cb0.bindTooltip(
+                `<div>
+                     <b>Stark Tower</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5cace21eef785cfe143cb73a1334f350 = L.marker(
+                [40.729169578227015, -74.00065892629384],
+                {
+}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            marker_5cace21eef785cfe143cb73a1334f350.bindTooltip(
+                `<div>
+                     <b>Sanctum Sanctorum</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bc235fd32d05845ac638fcf9fa2f0b21 = L.marker(
+                [40.689247, -74.044502],
+                {
+}
+            ).addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            marker_bc235fd32d05845ac638fcf9fa2f0b21.bindTooltip(
+                `<div>
+                     <b>Statue of Liberty</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_c3558bbc19029e345cf650988d999eab.addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+    
+            tile_layer_c3558bbc19029e345cf650988d999eab.addTo(map_00abe978fdc9559bebb80aa7d68e00d1);
+        
+</script>
+</html>
